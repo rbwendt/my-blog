@@ -16,14 +16,17 @@ body {
   margin: 0 auto;
 }
 
-body, a {
+body {
   color: #171717;
 }
 
-#content {
-  border-left: 40px solid #ff9640;
-  border-right: 40px solid #ffb273;
+a {
+  color: #026536;
+}
 
+#content {
+  border-left: 40px solid #b57c23;
+  border-right: 40px solid #ae9930;
 }
 
 a:hover {
@@ -90,7 +93,11 @@ hr {
 /* page header */
 
 .header {
-  margin: 3em 0 0;
+  margin: 0.5em 0 0;
+  padding: 2.5em 0 0;
+  background: #138ab2;
+  color: white;
+  border-bottom: 30px solid #026536;
 }
 
 .header h1 {
@@ -102,7 +109,7 @@ hr {
 
 .header a, .header a:hover {
   text-decoration: none;
-  color: #171717;
+  color: white;
 }
 
 .header .author {
