@@ -2,7 +2,7 @@
 title: A Random Password Generator
 author: ben-wendt
 date: 2015-09-04
-template: article.jade
+template: article.pug
 ---
 
 

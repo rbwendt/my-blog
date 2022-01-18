@@ -4,7 +4,7 @@ author: ben-wendt
 layout: post
 date: 2013-09-09
 url: /2013/09/09/a-timer-class/
-template: article.jade
+template: article.pug
 categories:
   - PHP
 tags:

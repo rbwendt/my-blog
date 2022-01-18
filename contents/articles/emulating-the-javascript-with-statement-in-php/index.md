@@ -3,7 +3,7 @@ title: Emulating the Javascript With Statement in PHP
 author: ben-wendt
 layout: post
 date: 2014-07-02
-template: article.jade
+template: article.pug
 url: /2014/07/02/emulating-the-javascript-with-statement-in-php/
 categories:
   - Javascript

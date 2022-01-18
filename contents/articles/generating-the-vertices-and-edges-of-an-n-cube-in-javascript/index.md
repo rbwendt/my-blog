@@ -3,7 +3,7 @@ title: Generating the vertices and edges of an n-cube in javascript
 author: ben-wendt
 layout: post
 date: 2013-10-26
-template: article.jade
+template: article.pug
 url: /2013/10/26/generating-the-vertices-and-edges-of-an-n-cube-in-javascript/
 categories:
   - Javascript

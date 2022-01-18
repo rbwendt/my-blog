@@ -3,7 +3,7 @@ title: A NavigableMap inspired class for PHP
 author: ben-wendt
 layout: post
 date: 2013-08-26
-template: article.jade
+template: article.pug
 url: /2013/08/26/a-navigablemap-inspired-class-for-php/
 categories:
   - PHP

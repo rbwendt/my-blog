@@ -2,7 +2,7 @@
 title: Using the HSL colour space on Android
 author: ben-wendt
 layout: post
-template: article.jade
+template: article.pug
 date: 2014-04-23
 url: /2014/04/23/using-the-hsl-colour-space-in-java/
 categories:

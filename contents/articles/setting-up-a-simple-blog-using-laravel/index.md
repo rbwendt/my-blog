@@ -4,7 +4,7 @@ author: ben-wendt
 layout: post
 date: 2014-04-09
 url: /2014/04/09/setting-up-a-simple-blog-using-laravel/
-template: article.jade
+template: article.pug
 categories:
   - PHP
 tags:

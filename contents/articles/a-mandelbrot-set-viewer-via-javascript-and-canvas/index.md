@@ -2,7 +2,7 @@
 title: A Mandelbrot Set Viewer via Javascript and Canvas
 author: ben-wendt
 layout: post
-template: article.jade
+template: article.pug
 date: 2013-05-24
 url: /2013/05/24/a-mandelbrot-set-viewer-via-javascript-and-canvas/
 categories:

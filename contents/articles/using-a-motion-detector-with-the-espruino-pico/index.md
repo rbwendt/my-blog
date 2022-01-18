@@ -3,7 +3,7 @@ title: Using a motion detector with the espruino pico
 author: ben-wendt
 layout: post
 date: 2015-05-07
-template: article.jade
+template: article.pug
 url: /2015/05/06/using-a-motion-detector-with-the-espruino-pico/
 categories:
   - Javascript

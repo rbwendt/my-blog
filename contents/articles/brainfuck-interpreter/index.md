@@ -3,7 +3,7 @@ title: Brainfuck Interpreter
 author: ben-wendt
 layout: post
 date: 2016-01-23
-template: article.jade
+template: article.pug
 url: /2016/01/23/brainfuck-interpreter/
 categories:
   - go

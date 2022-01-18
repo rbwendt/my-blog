@@ -3,7 +3,7 @@ title: Weighted merging of multiple Markov Chains
 author: ben-wendt
 layout: post
 date: 2013-12-04
-template: article.jade
+template: article.pug
 url: /2013/12/04/weighted-merging-of-multiple-markov-chains/
 categories:
   - PHP

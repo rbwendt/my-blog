@@ -2,7 +2,7 @@
 title: Canvas Spinny
 author: ben-wendt
 layout: post
-template: article.jade
+template: article.pug
 date: 2014-09-05
 url: /2014/09/05/canvas-spinny/
 categories:

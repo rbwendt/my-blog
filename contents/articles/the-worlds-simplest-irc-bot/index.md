@@ -3,7 +3,7 @@ title: The World's Simplest IRC Bot
 author: ben-wendt
 layout: post
 date: 2016-09-01
-template: article.jade
+template: article.pug
 ---
 
 I saw an article on twitter about [writing an IRC bot in ruby](https://blog.openshift.com/running-irc-bot-ruby-openshift-v3/). It piqued

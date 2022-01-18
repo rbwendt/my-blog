@@ -3,7 +3,7 @@ title: Parsing mathematical expressions and calculating the result
 author: ben-wendt
 layout: post
 date: 2013-07-19
-template: article.jade
+template: article.pug
 url: /2013/07/19/parsing-mathematical-expressions-and-calculating-the-result/
 categories:
   - PHP

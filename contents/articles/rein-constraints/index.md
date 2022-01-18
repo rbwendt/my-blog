@@ -3,12 +3,11 @@ title: 'Adding Database Constraints Using the `rein` Gem'
 author: ben-wendt
 layout: post
 date: 2017-03-28
-template: article.jade
+template: article.pug
 categories:
   - 'rails'
 tags:
   - database
-template: article.jade
 ---
 [rein][1] is a gem for adding database constraints
 in rails migrations. It's always been possible to set

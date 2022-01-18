@@ -3,7 +3,7 @@ title: Sleep Sort in Javascript
 author: ben-wendt
 layout: post
 date: 2013-07-08
-template: article.jade
+template: article.pug
 url: /2013/07/08/sleep-sort-in-javascript/
 categories:
   - Javascript

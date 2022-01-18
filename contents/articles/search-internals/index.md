@@ -2,7 +2,7 @@
 title: Search Index Internals
 author: ben-wendt
 date: 2015-09-27
-template: article.jade
+template: article.pug
 ---
 
 Watch me discuss how a search engine works.

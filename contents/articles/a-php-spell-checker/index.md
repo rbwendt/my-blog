@@ -3,7 +3,7 @@ title: A PHP spell checker
 author: ben-wendt
 layout: post
 date: 2013-10-21
-template: article.jade
+template: article.pug
 url: /2013/10/21/a-php-spell-checker/
 categories:
   - PHP

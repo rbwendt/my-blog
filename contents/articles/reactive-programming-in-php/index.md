@@ -3,7 +3,7 @@ title: Reactive Programming in PHP
 author: ben-wendt
 layout: post
 date: 2013-05-23
-template: article.jade
+template: article.pug
 url: /2013/05/23/reactive-programming-in-php/
 categories:
   - PHP

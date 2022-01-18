@@ -3,7 +3,7 @@ title: Viable promises in PHP using pthreads
 author: ben-wendt
 layout: post
 date: 2013-07-10
-template: article.jade
+template: article.pug
 url: /2013/07/10/viable-promises-in-php-using-pthreads/
 categories:
   - PHP

@@ -1,8 +1,8 @@
 ---
 title: 'Interfacing with an Espruino from c#'
-author: ben-<span class="more"></span>wendt
+author: ben-wendt
 layout: post
-template: article.jade
+template: article.pug
 date: 2014-02-07
 url: /2014/02/07/interfacing-with-an-espruino-from-c/
 categories:

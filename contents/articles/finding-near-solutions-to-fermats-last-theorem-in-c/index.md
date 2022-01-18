@@ -3,7 +3,7 @@ title: 'Finding near-solutions to Fermat’s Last Theorem in C#'
 author: ben-wendt
 layout: post
 date: 2013-07-26
-template: article.jade
+template: article.pug
 url: /2013/07/26/finding-near-solutions-to-fermats-last-theorem-in-c/
 categories:
   - 'c#'

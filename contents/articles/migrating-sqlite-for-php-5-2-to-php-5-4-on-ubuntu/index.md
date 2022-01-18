@@ -2,7 +2,7 @@
 title: Migrating SQLite for PHP 5.2 to PHP 5.4 on Ubuntu
 author: ben-wendt
 layout: post
-template: article.jade
+template: article.pug
 date: 2014-06-14
 url: /2014/06/14/migrating-sqlite-for-php-5-2-to-php-5-4-on-ubuntu/
 categories:

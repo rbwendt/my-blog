@@ -3,7 +3,7 @@ title: Relevance Graphing
 author: ben-wendt
 layout: post
 date: 2016-03-27
-template: article.jade
+template: article.pug
 ---
 
 Last month a workmate and I flew down to San Francisco to go to elasticon.

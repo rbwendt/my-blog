@@ -3,14 +3,13 @@ title: 'A Bloom Filter in c#'
 author: ben-wendt
 layout: post
 date: 2013-08-16
-template: article.jade
+template: article.pug
 url: /2013/08/16/a-bloom-filter-in-c/
 categories:
   - 'c#'
 tags:
   - data structures
   - probabilistic data structures
-template: article.jade
 ---
 A [bloom filter][1] is a probabilistic data structure meant for checking whether a given entry does not occur in a list. It is meant to be quite fast, and is used as a way of not doing costly queries when it can be determined that no results will be returned. E.g., if you could turn this:
 

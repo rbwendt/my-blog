@@ -1,7 +1,7 @@
 ---
 title: Non-functional Sleep Sort Implemented in PHP using pthreads
 author: ben-wendt
-template: article.jade
+template: article.pug
 date: 2013-07-08
 url: /2013/07/08/non-functional-sleep-sort-implemented-in-php-using-pthreads/
 categories:

@@ -1,7 +1,7 @@
 ---
 title: A Whitespace + Punctuation Tokenizer
 author: ben-wendt
-template: article.jade
+template: article.pug
 layout: post
 date: 2015-02-14
 url: /2015/02/13/a-whitespace-punctuation-tokenizer/

@@ -2,7 +2,7 @@
 title: A Lattice class
 author: ben-wendt
 layout: post
-template: article.jade
+template: article.pug
 date: 2013-10-09
 url: /2013/10/09/a-lattice-class/
 categories:

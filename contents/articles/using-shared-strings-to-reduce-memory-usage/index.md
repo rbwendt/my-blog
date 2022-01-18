@@ -2,7 +2,7 @@
 title: Using Shared Strings to Reduce Memory Usage
 author: ben-wendt
 layout: post
-template: article.jade
+template: article.pug
 date: 2013-09-27
 url: /2013/09/27/using-shared-strings-to-reduce-memory-usage/
 categories:

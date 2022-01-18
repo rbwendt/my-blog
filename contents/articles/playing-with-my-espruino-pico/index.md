@@ -4,7 +4,7 @@ author: ben-wendt
 layout: post
 date: 2015-05-03
 url: /2015/05/02/playing-with-my-espruino-pico/
-template: article.jade
+template: article.pug
 categories:
   - Javascript
 tags:

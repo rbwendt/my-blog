@@ -2,7 +2,7 @@
 title: Setting a custom response header in a Gin response
 author: ben-wendt
 date: 2015-06-04
-template: article.jade
+template: article.pug
 ---
 
 

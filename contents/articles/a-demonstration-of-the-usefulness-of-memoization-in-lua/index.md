@@ -3,7 +3,7 @@ title: A demonstration of the usefulness of Memoization in Lua
 author: ben-wendt
 layout: post
 date: 2013-07-24
-template: article.jade
+template: article.pug
 url: /2013/07/24/a-demonstration-of-the-usefulness-of-memoization-in-lua/
 categories:
   - Lua

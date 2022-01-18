@@ -3,7 +3,7 @@ title: Registry Pattern
 author: ben-wendt
 layout: post
 date: 2013-11-18
-template: article.jade
+template: article.pug
 url: /2013/11/18/registry-pattern/
 categories:
   - PHP

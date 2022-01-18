@@ -2,7 +2,7 @@
 title: An interesting example of using a closure for memoization
 author: ben-wendt
 layout: post
-template: article.jade
+template: article.pug
 date: 2015-05-15
 url: /2015/05/14/an-interesting-example-of-using-a-closure-for-memoization/
 categories:

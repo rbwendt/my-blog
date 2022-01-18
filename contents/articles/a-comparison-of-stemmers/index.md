@@ -3,13 +3,12 @@ title: A Comparison of Stemmers
 author: ben-wendt
 layout: post
 date: 2015-07-08
-template: article.jade
+template: article.pug
 url: /2015/07/07/a-comparison-of-stemmers/
 categories:
   - NLP
 tags:
   - nlp
-template: article.jade
 ---
 The goal of stemming is to reduce derived forms of a word to something that could be a root form. For example a possible stem of &#8220;lighting&#8221; or &#8220;lighted&#8221; is &#8220;light&#8221;. This is generally done by applying a list of fairly simple rules to a word, possibly recursively, until the algorithm is done and a root form is returned.
 <span class="more"></span>

@@ -1,7 +1,7 @@
 ---
 title: Replacing Removed Whitespace to Restore Words From a Dictionary
 author: ben-wendt
-template: article.jade
+template: article.pug
 layout: post
 date: 2013-09-12
 url: /2013/09/12/fixing-strings-with-whitespace-removal/

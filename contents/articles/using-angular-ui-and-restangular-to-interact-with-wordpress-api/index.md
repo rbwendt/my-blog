@@ -4,7 +4,7 @@ author: ben-wendt
 layout: post
 date: 2015-04-25
 url: /2015/04/25/using-angular-ui-and-restangular-to-interact-with-wordpress-api/
-template: article.jade
+template: article.pug
 categories:
   - Javascript
 tags:

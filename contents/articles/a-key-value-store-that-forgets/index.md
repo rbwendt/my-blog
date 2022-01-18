@@ -3,7 +3,7 @@ title: A key-value store that forgets
 author: ben-wendt
 layout: post
 date: 2014-02-27
-template: article.jade
+template: article.pug
 url: /2014/02/27/a-key-value-store-that-forgets/
 categories:
   - Javascript

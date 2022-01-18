@@ -2,7 +2,7 @@
 title: Restricting post-deployment tasks to certain roles using capistrano
 author: ben-wendt
 date: 2015-11-10
-template: article.jade
+template: article.pug
 ---
 
 If you need to only run some tasks on a certain subset of servers in your inventory, first add a role to your inventory file deploy/whatever-environment.rb:

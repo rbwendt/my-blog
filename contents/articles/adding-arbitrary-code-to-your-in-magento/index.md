@@ -3,7 +3,7 @@ title: 'Adding Arbitrary Code to your <head> in Magento'
 author: ben-wendt
 layout: post
 date: 2014-02-06
-template: article.jade
+template: article.pug
 url: /2014/02/06/adding-arbitrary-code-to-your-in-magento/
 categories:
   - Uncategorized

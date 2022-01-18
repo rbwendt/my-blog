@@ -1,4 +1,4 @@
 
-# Ben Wendt's Blog
+# Blog
 
-This uses [wintersmith](https://github.com/jnordberg/wintersmith).
+My blog

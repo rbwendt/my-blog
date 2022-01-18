@@ -3,7 +3,7 @@ title: The World's Simplest IRC Bot - Again
 author: ben-wendt
 layout: post
 date: 2016-09-15
-template: article.jade
+template: article.pug
 ---
 
 I was talking to a colleague who was expounding about the coolness of [elixir](http://elixir-lang.org/). So 

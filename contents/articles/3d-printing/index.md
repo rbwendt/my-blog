@@ -3,7 +3,7 @@ title: Designing Models for 3D Printing in openSCAD
 author: ben-wendt
 layout: post
 date: 2016-04-08
-template: article.jade
+template: article.pug
 ---
 
 My work ([TWG](http://twg.ca)) has a 3D printer for employees to play with and use. Sometime

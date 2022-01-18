@@ -1,7 +1,7 @@
 ---
 title: Using Underscore.PHP and Newton's Method to approximate pi
 author: ben-wendt
-template: article.jade
+template: article.pug
 layout: post
 date: 2014-04-16
 url: /2014/04/16/using-underscore-php-and-newtons-method-to-approximate-pi/

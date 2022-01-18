@@ -9,7 +9,7 @@ categories:
 tags:
   - algorithms
   - markov
-template: article.jade
+template: article.pug
 ---
 Here&#8217;s a simple Markov chain implementation in PHP, loosely adapted from this excellent write up about [implementing Markov chains in javascript][1]:
 

@@ -3,7 +3,7 @@ title: Longest Common Substring in PHP
 author: ben-wendt
 layout: post
 date: 2013-06-11
-template: article.jade
+template: article.pug
 url: /2013/06/11/longest-common-substring-in-php/
 categories:
   - PHP

@@ -2,7 +2,7 @@
 title: Pointless Promises in PHP
 author: ben-wendt
 layout: post
-template: article.jade
+template: article.pug
 date: 2013-06-19
 url: /2013/06/19/pointless-promises-in-php/
 categories:

@@ -2,7 +2,7 @@
 title: Getting a sum of durations in rails
 author: ben-wendt
 date: 2016-02-01
-template: article.jade
+template: article.pug
 ---
 
 For my "I had trouble finding this on google" series, here's a 

@@ -3,7 +3,7 @@ title: Playing with Vue.js
 author: ben-wendt
 date: 2016-04-04
 layout: post
-template: article.jade
+template: article.pug
 ---
 A coworker recently filled my ear with praise for [vue.js](http://vuejs.org/). 
 I'm always eager to try new frameworks, and the benefits over angular

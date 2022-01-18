@@ -2,7 +2,7 @@
 title: The Knuth-Morris-Pratt algorithm implemented in JavaScript
 author: ben-wendt
 layout: post
-template: article.jade
+template: article.pug
 date: 2013-09-20
 url: /2013/09/20/the-knuth-morris-pratt-algorithm-implemented-in-javascript/
 categories:

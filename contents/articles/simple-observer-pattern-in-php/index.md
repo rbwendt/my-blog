@@ -3,7 +3,7 @@ title: Simple Observer Pattern in PHP
 author: ben-wendt
 layout: post
 date: 2013-07-03
-template: article.jade
+template: article.pug
 url: /2013/07/03/simple-observer-pattern-in-php/
 categories:
   - PHP

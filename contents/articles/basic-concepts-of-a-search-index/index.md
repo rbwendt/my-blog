@@ -3,7 +3,7 @@ title: Basic Concepts of a Search Index
 author: ben-wendt
 layout: post
 date: 2015-01-31
-template: article.jade
+template: article.pug
 url: /2015/01/30/basic-concepts-of-a-search-index/
 categories:
   - PHP

@@ -2,7 +2,7 @@
 title: NLP Essentials
 author: ben-wendt
 date: 2015-07-18
-template: article.jade
+template: article.pug
 ---
 
 Here’s a talk I gave at work.

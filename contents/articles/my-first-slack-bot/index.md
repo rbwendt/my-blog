@@ -3,7 +3,7 @@ title: My first slack bot
 author: ben-wendt
 layout: post
 date: 2016-09-15
-template: article.jade
+template: article.pug
 ---
 
 I am still working on picking up some [elixir](http://elixir-lang.org/), so when a coworker mentioned

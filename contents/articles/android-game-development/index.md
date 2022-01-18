@@ -2,7 +2,7 @@
 title: Android Game Development
 author: benwendt
 layout: post
-template: article.jade
+template: article.pug
 date: 2015-02-14
 url: /2015/02/14/android-game-development/
 categories:

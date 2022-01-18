@@ -2,7 +2,7 @@
 title: Finding the main content element on a page in javascript
 author: ben-wendt
 layout: post
-template: article.jade
+template: article.pug
 date: 2013-06-10
 url: /2013/06/10/finding-the-main-content-element-on-a-page-in-javascript/
 categories:

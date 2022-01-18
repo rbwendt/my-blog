@@ -2,7 +2,7 @@
 title: Converting strings to bf code
 author: ben-wendt
 date: 2015-10-11
-template: article.jade
+template: article.pug
 ---
 
 I was playing around with the [esoteric programming language brainfuck](https://en.wikipedia.org/wiki/Brainfuck). I found that it was pretty time consuming writing out strings of text using only increments and decrements of the data pointer.

@@ -3,7 +3,7 @@ title: 'PHP’s traits vs. ruby’s modules: Battle of the mix-ins'
 author: ben-wendt
 layout: post
 date: 2015-04-10
-template: article.jade
+template: article.pug
 url: /2015/04/09/phps-traits-vs-rubys-modules-battle-of-the-mix-ins/
 categories:
   - PHP

@@ -3,7 +3,7 @@ title: Check out my FirefoxOS game Protect Your Thing!
 author: ben-wendt
 layout: post
 date: 2014-03-24
-template: article.jade
+template: article.pug
 url: /2014/03/24/check-out-my-firefoxos-game-protect-your-thing/
 categories:
   - Javascript

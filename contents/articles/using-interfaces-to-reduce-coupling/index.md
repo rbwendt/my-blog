@@ -3,7 +3,7 @@ title: Using Interfaces to reduce coupling
 author: ben-wendt
 layout: post
 date: 2013-06-28
-template: article.jade
+template: article.pug
 url: /2013/06/28/using-interfaces-to-reduce-coupling/
 categories:
   - PHP

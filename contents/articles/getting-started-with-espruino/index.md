@@ -3,7 +3,7 @@ title: Getting Started With Espruino
 author: ben-wendt
 layout: post
 date: 2014-02-07
-template: article.jade
+template: article.pug
 url: /2014/02/07/getting-started-with-espruino/
 categories:
   - Javascript

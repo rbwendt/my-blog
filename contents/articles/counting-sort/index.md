@@ -2,7 +2,7 @@
 title: Counting sort
 author: ben-wendt
 date: 2014-05-09
-template: article.jade
+template: article.pug
 ---
 
 I have a thing for sorting algorithms. They're fairly accessible as far as algorithms go, and it's always fun to look under the hood of how computers go about their business. Thinking algorithmically makes you a better programmer too.

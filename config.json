@@ -1,9 +1,9 @@
 {
   "locals": {
-    "url": "http://benwendt.ca",
+    "url": "http://localhost:8080",
     "name": "Ben Wendt's blog",
     "owner": "Ben Wendt",
-    "description": ""
+    "description": "Ocassional Notes"
   },
   "plugins": [
     "./plugins/paginator.coffee"
@@ -13,7 +13,7 @@
     "_": "underscore",
     "typogr": "typogr"
   },
-  "jade": {
+  "pug": {
     "pretty": true
   },
   "markdown": {
@@ -21,6 +21,6 @@
     "smartypants": true
   },
   "paginator": {
-    "perPage": 5
+    "perPage": 3
   }
 }

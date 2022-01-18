@@ -3,7 +3,7 @@ title: Skip List Implementation in PHP
 author: ben-wendt
 layout: post
 date: 2013-08-13
-template: article.jade
+template: article.pug
 url: /2013/08/13/skip-list-implementation-in-php/
 categories:
   - PHP

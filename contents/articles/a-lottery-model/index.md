@@ -3,7 +3,7 @@ title: A Lottery Model
 author: ben-wendt
 layout: post
 date: 2014-06-12
-template: article.jade
+template: article.pug
 url: /2014/06/12/a-lottery-model/
 categories:
   - PHP

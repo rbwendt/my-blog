@@ -1,7 +1,7 @@
 ---
 title: Installing VLC on an ADT-1
 author: ben-wendt
-template: article.jade
+template: article.pug
 layout: post
 date: 2014-10-22
 url: /2014/10/21/installing-vlc-on-an-adt-1/

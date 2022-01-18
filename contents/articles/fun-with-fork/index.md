@@ -3,7 +3,7 @@ title: Fun with `fork`
 author: ben-wendt
 layout: post
 date: 2016-02-02
-template: article.jade
+template: article.pug
 ---
 
 In `irb`,

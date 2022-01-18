@@ -4,7 +4,7 @@ author: ben-wendt
 layout: post
 date: 2015-04-18
 url: /2015/04/18/finding-semordniaps/
-template: article.jade
+template: article.pug
 categories:
   - ruby
 tags:
