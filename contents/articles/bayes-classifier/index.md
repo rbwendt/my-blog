@@ -2,7 +2,7 @@
 title: Intro to Bayesian Classifiers
 author: ben-wendt
 layout: post
-date: 2018-05-01
+date: 2017-05-01
 template: article.pug
 ---
 

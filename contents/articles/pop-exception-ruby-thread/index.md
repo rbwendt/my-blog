@@ -1,7 +1,7 @@
 ---
 title: Popping errors out from ruby threads using a Queue
 author: ben-wendt
-date: 2018-05-10
+date: 2017-05-10
 template: article.pug
 ---
 
