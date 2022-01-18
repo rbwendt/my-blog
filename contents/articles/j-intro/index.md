@@ -1,7 +1,7 @@
 ---
 title: Introduction to J
 author: ben-wendt
-date: 2108-01-01
+date: 2018-01-01
 template: article.pug
 ---
 

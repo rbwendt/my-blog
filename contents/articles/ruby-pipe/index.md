@@ -1,7 +1,7 @@
 ---
 title: A Ruby Pipe
 author: ben-wendt
-date: 2108-02-01
+date: 2018-02-01
 template: article.pug
 ---
 
