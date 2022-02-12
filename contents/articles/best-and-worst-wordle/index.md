@@ -50,72 +50,72 @@ Using this we can check each words score against all other words. Sorting by yel
 
 |      | word   |   yellow |   green |
 |-----:|:-------|---------:|--------:|
-|  112 | aeros  |    20698 |    7505 |
-| 8530 | soare  |    20698 |    5610 |
-| 7414 | reais  |    20402 |    7482 |
-| 8109 | serai  |    20402 |    4800 |
-|  113 | aesir  |    20402 |    3618 |
-|  257 | aloes  |    20092 |    7774 |
-| 9373 | toeas  |    19992 |    8021 |
-| 8810 | stoae  |    19992 |    4119 |
-| 4998 | lares  |    19926 |    9414 |
-| 7336 | rales  |    19926 |    9149 |
+|   | aeros  |    20698 |    7505 |
+|  | soare  |    20698 |    5610 |
+|  | reais  |    20402 |    7482 |
+|  | serai  |    20402 |    4800 |
+|   | aesir  |    20402 |    3618 |
+|   | aloes  |    20092 |    7774 |
+|  | toeas  |    19992 |    8021 |
+|  | stoae  |    19992 |    4119 |
+|  | lares  |    19926 |    9414 |
+|  | rales  |    19926 |    9149 |
 
 Or sorted by greens, then yellows:
 
 |      | word   |   yellow |   green |
 |-----:|:-------|---------:|--------:|
-| 8609 | sores  |    16277 |    9982 |
-| 7897 | sanes  |    16625 |    9914 |
-| 7867 | sales  |    16854 |    9825 |
-| 8577 | sones  |    15442 |    9772 |
-| 8568 | soles  |    15671 |    9683 |
-|  680 | bares  |    18712 |    9661 |
-| 1423 | cares  |    18932 |    9649 |
-| 6602 | pares  |    18999 |    9642 |
-| 7930 | sates  |    16754 |    9594 |
-| 9100 | tares  |    19826 |    9591 |
+|  | sores  |    16277 |    9982 |
+|  | sanes  |    16625 |    9914 |
+|  | sales  |    16854 |    9825 |
+|  | sones  |    15442 |    9772 |
+|  | soles  |    15671 |    9683 |
+|   | bares  |    18712 |    9661 |
+|  | cares  |    18932 |    9649 |
+|  | pares  |    18999 |    9642 |
+|  | sates  |    16754 |    9594 |
+|  | tares  |    19826 |    9591 |
 
 So it looks like "aeros" and "sores" are good starting words. I don't think the
 actual winning words ever end with 's', so let's look at those options. Most yellows:
 
 |      | word   |   yellow |   green |
 |-----:|:-------|---------:|--------:|
-| 8530 | soare  |    20698 |    5610 |
-| 8109 | serai  |    20402 |    4800 |
-|  113 | aesir  |    20402 |    3618 |
-| 8810 | stoae  |    19992 |    4119 |
-| 5007 | laser  |    19926 |    5371 |
-| 8110 | seral  |    19926 |    4851 |
-| 9115 | taser  |    19826 |    5548 |
-| 8839 | strae  |    19826 |    4405 |
-| 2639 | earst  |    19826 |    4044 |
-| 7532 | resat  |    19826 |    3747 |
+|  | soare  |    20698 |    5610 |
+|  | serai  |    20402 |    4800 |
+|   | aesir  |    20402 |    3618 |
+|  | stoae  |    19992 |    4119 |
+|  | laser  |    19926 |    5371 |
+|  | seral  |    19926 |    4851 |
+|  | taser  |    19826 |    5548 |
+|  | strae  |    19826 |    4405 |
+|  | earst  |    19826 |    4044 |
+|  | resat  |    19826 |    3747 |
 
 Most greens:
 
 |      | word   |   yellow |   green |
 |-----:|:-------|---------:|--------:|
-| 7913 | saree  |    17460 |    7300 |
-| 8606 | soree  |    16277 |    7158 |
-| 7912 | sared  |    19388 |    6907 |
-| 8605 | sored  |    18205 |    6765 |
-| 8584 | sooey  |    14819 |    6711 |
-| 7896 | saned  |    18553 |    6697 |
-| 1083 | boree  |    12211 |    6695 |
-| 7365 | raree  |    12142 |    6624 |
-| 4997 | laree  |    14608 |    6590 |
-| 7890 | samey  |    17572 |    6554 |
+|  | saree  |    17460 |    7300 |
+|  | soree  |    16277 |    7158 |
+|  | sared  |    19388 |    6907 |
+|  | sored  |    18205 |    6765 |
+|  | sooey  |    14819 |    6711 |
+|  | saned  |    18553 |    6697 |
+|  | boree  |    12211 |    6695 |
+|  | raree  |    12142 |    6624 |
+|  | laree  |    14608 |    6590 |
+|  | samey  |    17572 |    6554 |
 
 And now let's look at the worst starting options:
 
 |       | word   |   yellow |   green |
 |------:|:-------|---------:|--------:|
-| 10377 | xylyl  |     4330 |    1425 |
-|  3275 | fuffy  |     4376 |    2751 |
-|  3836 | gyppy  |     4396 |    2382 |
-|  4261 | hyphy  |     4482 |    2118 |
-|  1728 | cocco  |     4710 |    3467 |
+|  | xylyl  |     4330 |    1425 |
+|   | fuffy  |     4376 |    2751 |
+|   | gyppy  |     4396 |    2382 |
+|   | hyphy  |     4482 |    2118 |
+|   | cocco  |     4710 |    3467 |
 
 Those look like some terrible options to start with, but today I started with "aeros", and the
 correct answer was "proxy". I think I would have been better off starting with the "xy" 
