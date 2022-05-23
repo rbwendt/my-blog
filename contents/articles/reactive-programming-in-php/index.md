@@ -15,10 +15,9 @@ Wikipedia has this to say about [reactive programming][1]:
 
 > In [computing][2], **[reactive programming][1]** is a [programming paradigm][3] oriented around [data flows][4] and the propagation of change. This means that it should be possible to express static or dynamic data flows with ease in the programming languages used, and that the underlying execution model will automatically propagate changes through the data flow.
 
-Inspired by projects like [knockout.js][5] and [reactor.js][6], I thought I&#8217;d give it a shot in PHP. Here is an example implementation:
+Inspired by projects like [knockout.js][5] and [reactor.js][6], I thought I'd give it a shot in PHP. Here is an example implementation:
 
-<pre class="brush: php; title: ; notranslate" title="">&lt;?php
-
+```php
 $Signal = function($v) {
 	if (is_callable($v)) {
 		return function() use ($v) {
@@ -38,11 +37,11 @@ $Signal = function($v) {
 	}
 };
 
-</pre>
+```
 
 And here is an example of usage:
 
-<pre class="brush: php; title: ; notranslate" title="">&lt;?php
+```php
 
 include 'Reactor.php';
 
@@ -71,7 +70,7 @@ $foo(0);
 echo $foo() . "n";
 echo $bar2() . "nn";
 
-</pre>
+```
 
  [1]: http://en.wikipedia.org/wiki/Reactive_programming
  [2]: http://en.wikipedia.org/wiki/Computing "Computing"
