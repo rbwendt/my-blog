@@ -14,11 +14,12 @@ tags:
 ---
 [Underscore.js][1] has been ported to [Underscore.PHP][2].
 
-For a simple example, let&#8217;s using Newton&#8217;s method to approximate pi.
+For a simple example, let's using Newton's method to approximate pi.
 
 <span class="more"></span>
 
-<pre class="brush: php; title: ; notranslate" title="">$iterations = 20;
+```php
+$iterations = 20;
 $x = 3;
 
 $_ = new __();
@@ -38,10 +39,10 @@ for ($i = 0; $i &lt; $iterations; $i++) {
 	$j[] = $h;
 }
 
-$_-&gt;each($j, function($k) {$k();});
+$_->each($j, function($k) {$k();});
 
 echo $x;
-</pre>
+```
 
  [1]: http://underscorejs.org/
  [2]: https://github.com/brianhaveri/Underscore.php
