@@ -10,9 +10,14 @@ categories:
 tags:
   - content
 ---
-Short of going to something more complex like measuring information or doing some natural language processing, you can estimate which element on a page contains the content by determining which element has the highest ratio of contained content to contained markup. Here&#8217;s a javascript snippet that does just that:
+Short of going to something more complex like measuring information
+or doing some natural language processing, you can estimate which 
+element on a page contains the content by determining which element 
+has the highest ratio of contained content to contained markup. 
+Here's a javascript snippet that does just that:
 
-<pre class="brush: jscript; title: ; notranslate" title="">// not perfect obviously. Not terrible neither.
+```js
+// not perfect obviously. Not terrible neither.
 
 var id, tag;
 var all = document.querySelectorAll('body *'), max = 0, el, i, L;
@@ -56,4 +61,4 @@ for (i = 0, L =all.length; i &lt; L; i++) {
 console.log(el)
 console.log(el.textContent.length / el.innerHTML.length)
 
-</pre>
+```

@@ -11,9 +11,13 @@ tags:
   - markov
 template: article.pug
 ---
-Here&#8217;s a simple Markov chain implementation in PHP, loosely adapted from this excellent write up about [implementing Markov chains in javascript][1]:
 
-<pre class="brush: php; title: ; notranslate" title="">class Link {
+Here&#8217;s a simple Markov chain implementation in PHP, loosely 
+adapted from this excellent write up about [implementing Markov 
+chains in javascript][1]:
+
+```php
+class Link {
 	private $nexts = array();
 	public function addNextWord($word) {
 		if (!is_string($word)) {
@@ -76,11 +80,12 @@ class Chain {
 		}
 	}
 }
-</pre>
+```
 
 And here is an example of usage:
 
-<pre class="brush: php; title: ; notranslate" title="">function get_all_words_in_file($file) {
+```php
+function get_all_words_in_file($file) {
 	return preg_split('/s+/ ', file_get_contents($file));
 }
 
@@ -90,8 +95,13 @@ $words = get_all_words_in_file($file);
 $chain = new Chain($words);
 $newSentence = $chain-&gt;getChainOfLength('The', 200);
 echo wordwrap($newSentence, 80, "n");
-</pre>
+```
 
-Conceptually, a Markov chain captures the idea of likelihood of traversing from state to state. You can populate this data for a block of text by passing through a block of text and counting the number of occurrences of words that follow a given word. You can then use this data to generate new blocks of text.
+Conceptually, a Markov chain captures the idea of likelihood of 
+traversing from state to state. You can populate this data for a 
+block of text by passing through a block of text and counting the 
+number of occurrences of words that follow a given word. You can 
+then use this data to generate new blocks of text.
+
 
  [1]: http://blog.javascriptroom.com/2013/01/21/markov-chains/

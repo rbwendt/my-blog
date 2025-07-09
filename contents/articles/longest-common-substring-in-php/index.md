@@ -13,7 +13,8 @@ tags:
 ---
 Longest common substring is a function that can be useful once in a while. Here&#8217;s a PHP implementation. Be forewarned, this runs in `O(mn)` time.
 
-<pre class="brush: php; title: ; notranslate" title="">function longest_common_substring($string1, $string2) {
+```php
+function longest_common_substring($string1, $string2) {
 	$L = array();
 	$length = 0;
 	$pos = 0;
@@ -51,12 +52,14 @@ Longest common substring is a function that can be useful once in a while. Here&
 	}
 }
 
-</pre>
+```
 
 Usage:
 
-<pre class="brush: php; title: ; notranslate" title="">$string1 = 'sadjjasdf this is the string  sdlkjhaskl';
+```php
+
+$string1 = 'sadjjasdf this is the string  sdlkjhaskl';
 $string2 = 'eriuhysdfnbasi this is the stringbhdjubsdi';
 
 echo longest_common_substring($string1, $string2);
-</pre>
+```

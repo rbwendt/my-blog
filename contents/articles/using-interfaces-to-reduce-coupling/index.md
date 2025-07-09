@@ -13,7 +13,8 @@ tags:
 ---
 Consider the following three scenarios:
 
-  1. <pre class="brush: php; title: ; notranslate" title="">class Dog {
+```php  
+  class Dog {
 ...
     public function Bark($str) {
         echo $str;
@@ -24,12 +25,14 @@ Consider the following three scenarios:
 class AnimalCommunication {
 ...
     public function DogBark(Dog $dog, $str) {
-        $dog-&gt;Bark($str);
+        $dog->Bark($str);
     }
 ...
-}</pre>
+}
+```
 
-  2. <pre class="brush: php; title: ; notranslate" title="">class Dog {
+```php  
+  class Dog {
 ...
     public function Bark($str) {
         echo $str;
@@ -44,26 +47,29 @@ class AnimalCommunication {
         echo $str;
     }
 ...
-}</pre>
+}
+```
 
-  3. <pre class="brush: php; title: ; notranslate" title="">Interface IAnimal {
+```php
+Interface IAnimal {
     public function Speak($str);
 }
 
 Class Dog implements IAnimal {
 ...
     public function Speak($str) {
-        $this-&gt;Bark($str);
+        $this->Bark($str);
     }
 ....
 }
 class AnimalCommunication {
 ...
     public function AnimalCommunicate(IAnimal $animal, $str) {
-        $animal-&gt;speak($str);
+        $animal->speak($str);
     }
 ...
-}</pre>
+}
+```
 
 Note the following about these examples:
 

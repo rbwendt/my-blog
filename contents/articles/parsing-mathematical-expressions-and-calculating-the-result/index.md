@@ -16,7 +16,8 @@ Given a string like `2 * 2 + 2`, how would you calculate the value? It&#8217;s n
 
 Here is the function to throw a string at.
 
-<pre class="brush: php; title: ; notranslate" title="">&lt;?php
+```php
+<?php
 
 function calculate($input) {
 	$tokens = tokenize($input);
@@ -30,14 +31,15 @@ And I just rely on PHP&#8217;s built in tokenizer, which I throw a wrapper aroun
 
 <pre class="brush: php; title: ; notranslate" title="">function tokenize($input) {
 	
-	$tokens = token_get_all("&lt;?php $input");
+	$tokens = token_get_all("<?php $input");
 	return $tokens;
 }
-</pre>
+```
 
 So here is the first function that really does anything. Note that only pedmas rules are followed. The parser doesn&#8217;t deal with anything like exponentiation, trig functions, etc.
 
-<pre class="brush: php; title: ; notranslate" title="">function parse_tokens($tokens) {
+```php
+function parse_tokens($tokens) {
 	
 	if (!is_array($tokens)) {
 		// invalid input.
@@ -49,8 +51,8 @@ So here is the first function that really does anything. Note that only pedmas r
 	$parsed_tokens = array();
 	$skip_to = 0;
 	
-	foreach($tokens as $token_number =&gt; $token) {
-		if ($token_number &lt; $skip_to) continue;
+	foreach($tokens as $token_number => $token) {
+		if ($token_number < $skip_to) continue;
 		if (is_array($token) && isset($token[0])) {
 			switch($token[0]) {
 				case 305 :
@@ -78,7 +80,7 @@ So here is the first function that really does anything. Note that only pedmas r
 					
 					$new_tokens = array();
 					$parentheses_count = 1;
-					for ($i = $token_number + 1; $i &lt; count($tokens); $i++) {
+					for ($i = $token_number + 1; $i < count($tokens); $i++) {
 						if ($tokens[$i] == '(') {
 							$parentheses_count ++;
 
@@ -111,26 +113,27 @@ So here is the first function that really does anything. Note that only pedmas r
 	}
 	return $parsed_tokens;
 }
-</pre>
+```
 
 Now run through the parsed tokens, apply the order of operations, and run until there is a result.
 
-<pre class="brush: php; title: ; notranslate" title="">function calculate_from_parsed($parsed_tokens) {
+```php
+function calculate_from_parsed($parsed_tokens) {
 
 	if (count($parsed_tokens) == 1 && !is_array($parsed_tokens[0])) {
 		return $parsed_tokens[0];
 	} else if (count($parsed_tokens) == 1 && is_array($parsed_tokens[0])) {
 		return calculate_from_parsed($parsed_tokens[0]);
 	} else {
-		foreach($parsed_tokens as $token_number =&gt; $parsed_token) {
+		foreach($parsed_tokens as $token_number => $parsed_token) {
 			if (is_array($parsed_token)) {
 				$parsed_tokens[$token_number] = calculate_from_parsed($parsed_token);
 			}
 		}
 		
-		while (count($parsed_tokens) &gt; 1) {
+		while (count($parsed_tokens) > 1) {
 			$continue = false;
-			foreach($parsed_tokens as $token_number =&gt; $parsed_token) {
+			foreach($parsed_tokens as $token_number => $parsed_token) {
 				$previous_token_pair = get_previous_token_pair($parsed_tokens, $token_number);
 				$previous_token = $previous_token_pair[0];
 				$previous_token_index = $previous_token_pair[1];
@@ -152,7 +155,7 @@ Now run through the parsed tokens, apply the order of operations, and run until 
 			
 			$parsed_tokens = array_values($parsed_tokens);
 			
-			foreach($parsed_tokens as $token_number =&gt; $parsed_token) {
+			foreach($parsed_tokens as $token_number => $parsed_token) {
 				$previous_token_pair = get_previous_token_pair($parsed_tokens, $token_number);
 				$previous_token = $previous_token_pair[0];
 				$previous_token_index = $previous_token_pair[1];
@@ -177,13 +180,14 @@ Now run through the parsed tokens, apply the order of operations, and run until 
 		}
 	}
 }
-</pre>
+```
 
 And since we pop results out of the array as we go we need a helper function for retrieving the previous populated element in an array.
 
-<pre class="brush: php; title: ; notranslate" title="">function get_previous_token_pair($tokens, $token_number) {
+```php
+function get_previous_token_pair($tokens, $token_number) {
 	$return = false;
-	for ($i = $token_number - 1; $i &gt; -1; $i--) {
+	for ($i = $token_number - 1; $i > -1; $i--) {
 		if (isset($tokens[$i])) {
 			$return = array($tokens[$i], $i);
 			break;
@@ -191,11 +195,12 @@ And since we pop results out of the array as we go we need a helper function for
 	}
 	return $return;
 }
-</pre>
+```
 
 And here is a little test suite, all of which pass:
 
-<pre class="brush: php; title: ; notranslate" title="">$tests = array(
+```php
+$tests = array(
 	array('(1.1 + ((1)))', 2.1),
 	array('2 + 2', 4),
 	array('1 + 1 + 1 + 1 + 1    + 1 + 1 + 1 + 1 + 1      + 1 +1 + 1 + 1 + 1', 15),
@@ -221,8 +226,8 @@ foreach($tests as $test) {
 	if ($generated_result == $result) {
 		echo "$generated_result passedn";
 	} else {
-		echo "$generated_result &lt;-- FAILEDn";
+		echo "$generated_result <-- FAILEDn";
 	}
 }
 
-</pre>
+```

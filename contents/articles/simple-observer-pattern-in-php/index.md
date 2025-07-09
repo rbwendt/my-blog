@@ -15,45 +15,48 @@ The observer pattern is a nifty way to decouple objects from one another. Rather
 
 Our implementation will have two general groups of objects, subscribers and observers. A subscriber class will hook in to an observer class and make actions when the observer publishes certain messages. The observer class will give objects methods to subscribe and unsubscribe from its messages.
 
-We&#8217;ll begin by setting up an interface for our subscribers. Our subscribers could really be anything, so we want to specify some general behaviour that they will have. We don&#8217;t want to be restrictive and have an abstract class that they will inherit from because that would restrict functionality of all subscribers and limit the usefulness of this pattern.
+We'll begin by setting up an interface for our subscribers. Our subscribers could really be anything, so we want to specify some general behaviour that they will have. We don't want to be restrictive and have an abstract class that they will inherit from because that would restrict functionality of all subscribers and limit the usefulness of this pattern.
 
-<pre class="brush: php; title: ; notranslate" title="">interface Subscriber {
+```php
+interface Subscriber {
 	public function EventCall($str);
 }
-</pre>
+```
 
 Now we&#8217;ll set up an abstract class for Observables. This may be more useful as a trait but we actually do have to implement some functionality here.
 
-<pre class="brush: php; title: ; notranslate" title="">abstract class Observable {
+```php
+abstract class Observable {
 	private $_subscribers = array();
 	public function Subscribe($o) {
 		// give objects an ability to add themselves to the subscribers list.
-		if (!in_array($o, $this-&gt;_subscribers)) {
-			$this-&gt;_subscribers[] = $o;
+		if (!in_array($o, $this->_subscribers)) {
+			$this->_subscribers[] = $o;
 		}
 	}
 	public function Unsubscribe($o) {
 		// give objects an ability to remove themselves from the subscribers list.
-		if (in_array($o, $this-&gt;_subscribers)) {
-			foreach($this-&gt;_subscribers as $key =&gt; $value) {
+		if (in_array($o, $this->_subscribers)) {
+			foreach($this->_subscribers as $key => $value) {
 				if ($o == $value) {
-					unset($this-&gt;_subscribers[$key]);
+					unset($this->_subscribers[$key]);
 				}
 			}
 		}	
 	}
 	public function Event($event) {
 		// when the event occurs, call the corresponding method on the clients.
-		foreach($this-&gt;_subscribers as $subscriber) {
-			$subscriber-&gt;EventCall($event);
+		foreach($this->_subscribers as $subscriber) {
+			$subscriber->EventCall($event);
 		}
 	}
 }
-</pre>
+```
 
 Now that the abstract class and interface are ready, we can make some concrete classes based on these.
 
-<pre class="brush: php; title: ; notranslate" title="">class Observer extends Observable {
+```php
+class Observer extends Observable {
 	public function Talk() {
 		echo "I am an observern";
 	}
@@ -68,10 +71,10 @@ class Subscriber1 implements Subscriber{
 class Subscriber2 implements Subscriber {
 	private $data;
 	public function __construct($data) {
-		$this-&gt;data = $data;
+		$this->data = $data;
 	}
 	public function EventCall($str) {
-		echo "Subscriber2 event occured $str data is " . $this-&gt;data . "n";
+		echo "Subscriber2 event occured $str data is " . $this->data . "n";
 	}
 }
 
@@ -80,29 +83,30 @@ class Subscriber3 implements Subscriber {
 		echo "Subscriber3 event occured $strn";
 	}
 }
-</pre>
+```
 
-And now let&#8217;s make some instances of these:
+And now let's make some instances of these:
 
-<pre class="brush: php; title: ; notranslate" title="">$observer = new Observer();
+```php
+$observer = new Observer();
 $subscriber1 = new Subscriber1();
 $subscriber2 = new Subscriber2('one');
 $subscriber2too = new Subscriber2('two');
 $subscriber3 = new Subscriber3();
 
-$observer-&gt;Subscribe($subscriber1);
-$observer-&gt;Subscribe($subscriber2);
-$observer-&gt;Subscribe($subscriber2);
-$observer-&gt;Subscribe($subscriber2too);
-$observer-&gt;Subscribe($subscriber3);
+$observer->Subscribe($subscriber1);
+$observer->Subscribe($subscriber2);
+$observer->Subscribe($subscriber2);
+$observer->Subscribe($subscriber2too);
+$observer->Subscribe($subscriber3);
 
-$observer-&gt;Event('wow check out this awesome message that is being passed, bro.');
-$observer-&gt;Talk();
+$observer->Event('wow check out this awesome message that is being passed, bro.');
+$observer->Talk();
 
-$observer-&gt;Unsubscribe($subscriber2);
+$observer->Unsubscribe($subscriber2);
 
-$observer-&gt;Event('what unheard of madness will happen next?');
-</pre>
+$observer->Event('what unheard of madness will happen next?');
+```
 
 And of course the output is:
 

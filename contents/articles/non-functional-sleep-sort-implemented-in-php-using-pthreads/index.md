@@ -18,18 +18,20 @@ When I did this before in javascript, the results were accurate because javascri
 
 PHP is not asynchronous. You could imagine looping through a collection and calling `sleep` before each `echo` and that this would be a basic sleep sort implementation. This doesn&#8217;t work because in PHP sleep is blocking. The result will be a script that waits the sum of the array seconds in total, and outputs the order unchanged.
 
-<pre class="brush: php; title: ; notranslate" title="">function sleepcount($sleepnum) {
+```php
+function sleepcount($sleepnum) {
 	sleep($sleepnum);
 	echo "$sleepnumn";
 }
 foreach($nums as $num){
 	sleepcount($num);
 }
-</pre>
+```
 
 There are several methods of implementing threading in PHP. A beta PHP extension called [pthreads][2] is one way to do this. Here&#8217;s an implementation based on the [pthreads Async example][3]:
 
-<pre class="brush: php; title: ; notranslate" title="">function sleepcount($sleepnum) {
+```php
+function sleepcount($sleepnum) {
 	sleep($sleepnum);
 	echo "$sleepnumn";
 }
@@ -37,21 +39,21 @@ There are several methods of implementing threading in PHP. A beta PHP extension
 class Async extends Thread {
 
 	public function __construct($method, $params){
-		$this-&gt;method = $method;
-		$this-&gt;params = $params;
-		$this-&gt;result = null;
-		$this-&gt;joined = false;
+		$this->method = $method;
+		$this->params = $params;
+		$this->result = null;
+		$this->joined = false;
 	}
 
 	public function run(){
-		if (($this-&gt;result=call_user_func_array($this-&gt;method, $this-&gt;params))) {
+		if (($this->result=call_user_func_array($this->method, $this->params))) {
 			return true;
 		} else return false;
 	}
 
 	public static function call($method, $params){
 		$thread = new Async($method, $params);
-		if($thread-&gt;start()){
+		if($thread->start()){
 			return $thread;
 		}
 	}
@@ -64,7 +66,7 @@ $nums = array( 6, 2, 4, 1);
 foreach($nums as $num){
 	$future = Async::call("sleepcount", array($num));
 }
-</pre>
+```
 
 On my development machine this does not product the correct results. It only sorts elements pairwise, so my result is
 

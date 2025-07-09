@@ -11,13 +11,20 @@ tags:
   - design patterns
   - promise
 ---
-A [promise][1] is a way to defer the execution of a given routine until the data it needs to run is ready. This is a very useful pattern in asynchronous languages, so using promises in a language like javascript is a great idea.
+A [promise][1] is a way to defer the execution of a given routine 
+until the data it needs to run is ready. This is a very useful 
+pattern in asynchronous languages, so using promises in a language 
+like javascript is a great idea.
 
-Of course PHP is (without forking) totally synchronous so there is really no reason to implement the promise pattern in PHP.
+Of course PHP is (without forking) totally synchronous so there is 
+really no reason to implement the promise pattern in PHP.
 
-But the motto of every programmer is &#8220;if it&#8217;s a bad idea, I will do it!&#8221; (no, it isn&#8217;t), so here&#8217;s an implementation of promises in PHP:
+But the motto of every programmer is &#8220;if it's a bad 
+idea, I will do it!&#8221; (no, it isn't), so here's an 
+implementation of promises in PHP:
 
-<pre class="brush: php; title: ; notranslate" title="">class PromiseClass {
+```php
+class PromiseClass {
 	private $callbacks = array();
 	private $last_return;
 	function promise($promise) {
@@ -42,7 +49,7 @@ But the motto of every programmer is &#8220;if it&#8217;s a bad idea, I will do 
 		}
 	}
 }
-</pre>
+```
 
 A few things to note here: 
 
@@ -53,9 +60,10 @@ A few things to note here:
 
 Here&#8217;s an example of usage of this useless and pointless class:
 
-<pre class="brush: php; title: ; notranslate" title="">$promiser = new PromiseClass();
+```php
+$promiser = new PromiseClass();
 
-$promiser-&gt;promise(function() {
+$promiser->promise(function() {
 		echo "sleepingn";
 		sleep(3);
 		return 3;
@@ -68,10 +76,12 @@ $promiser-&gt;promise(function() {
 		echo "even farthernn";
 	});
 
-$promiser-&gt;resolve();	
-</pre>
+$promiser->resolve();	
+```
 
-Note: I&#8217;ve added some `sleep` statements here so it almost seems like something asynchronous is happening. Really `sleep` is just blocking. The output will be something like:
+Note: I've added some `sleep` statements here so it almost seems 
+like something asynchronous is happening. Really `sleep` is just 
+blocking. The output will be something like:
 
 <pre>sleeping
 that far
